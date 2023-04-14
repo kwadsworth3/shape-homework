@@ -4,13 +4,13 @@ public class Shape {
 	private int dimensions;
 	private boolean polygon;
 	private String angles;
-	
+
 	public Shape() {
 		this.dimensions = 2;
 		this.polygon = true;
 		this.angles = "no";
 	}
-	
+
 	public Shape(int dimensions, boolean polygon, String angles, int area) {
 		this.dimensions = dimensions;
 		this.polygon = polygon;
@@ -33,6 +33,7 @@ public class Shape {
 	public void setPolygon(boolean polygon) {
 		this.polygon = polygon;
 	}
+
 	public String getAngles() {
 		return angles;
 	}
@@ -43,7 +44,8 @@ public class Shape {
 
 	@Override
 	public String toString() {
-		return "This shape has " + dimensions + " dimensions. Is it a polygon? " + polygon + ". It also has " + angles + " angles.";
+		return "This shape has " + dimensions + " dimensions. Is it a polygon? " + polygon + ". It also has " + angles
+				+ " angles.";
 	}
-	
+
 }
